@@ -33,3 +33,6 @@ Devolver un archivo a un punto en la historia
 - Tener mucho cuidado porque este comando borra todos los cambios adicionales que se hicieron
 git reset  -alfanumerico-   --hard o --soft
 
+Permite visualizar los bits por commit
+git log --stat
+
