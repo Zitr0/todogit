@@ -10,6 +10,9 @@ git rm PrimerArchivo.txt
 Removerlo completamente del staging
 git rm --cached PrimerArchivo.txt
 
+Removerlo completamente del staging y el disco
+git rm --force PrimerArchivo.txt
+
 Enviarlo al master
 git commit -m "Primer commit del archivo"
 
