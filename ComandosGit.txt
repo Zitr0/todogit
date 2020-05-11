@@ -25,3 +25,11 @@ git config --global user.email "camiloorvi@gmail.com"
 
 Ver cambios o historia de un archivo
 git log PrimerArchivo.txt
+
+Mostrar más información de las modificaciones del archivo 
+git show NOMBREARCHIVO
+
+Devolver un archivo a un punto en la historia
+- Tener mucho cuidado porque este comando borra todos los cambios adicionales que se hicieron
+git reset  -alfanumerico-   --hard o --soft
+
