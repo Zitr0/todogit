@@ -1,1 +1,2 @@
-Este es el primer archivo en VSC
+Este es el primer archivo en 
+VisualStudio Code
