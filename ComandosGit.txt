@@ -36,3 +36,11 @@ git reset  -alfanumerico-   --hard o --soft
 Permite visualizar los bits por commit
 git log --stat
 
+Permite visualizar un archivo con la información de ese momento
+se debe tener cuidado de no hacer commit en ese momento,
+porque se perderia la información
+git checkout -alfanumerico- NOMBREARCHIVO
+
+si quiero volver al archivo
+git checkout master NOMBREARCHIVO
+
