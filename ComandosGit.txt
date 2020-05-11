@@ -1,0 +1,27 @@
+Ver el estado del folder
+git status
+
+Agregar un archivo al staging
+git add PrimerArchivo.txt
+
+Remover un archivo del staging
+git rm PrimerArchivo.txt
+
+Removerlo completamente del staging
+git rm --cached PrimerArchivo.txt
+
+Enviarlo al master
+git commit -m "Primer commit del archivo"
+
+Ver la configuración de git
+git config
+git config --list
+git config --list --show-origin
+
+Agregar usuario y email
+
+git config --global user.name "Camilo Ortiz"
+git config --global user.email "camiloorvi@gmail.com"
+
+Ver cambios o historia de un archivo
+git log PrimerArchivo.txt
