@@ -11,8 +11,99 @@
             </div>
             <div id="post">
                 <h1>Comandos</h1>
-                <p>Mucho texto para las ramas</p>
-                <p>Otro parrafo dentro de master</p>
+                <p align="center">Información sobre los comandos vistos en el curso</p>
+                
+                
+                <table class="t-comands"  align="center">
+                    
+                    <thead>
+                        <tr>
+                            <td>Comando</td>
+                            <td>Detalle</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>git init</td>
+                            <td>Ubicado dentro de un folder, se inicia el directorio de trabajo</td>
+                        </tr>
+                        <tr>
+                            <td>git status</td>
+                            <td>Ver el estado del folder</td>
+                        </tr>
+                        <tr>
+                            <td>git add %nombrearchivo%</td>
+                            <td>Agregar un archivo al staging</td>
+                        </tr>
+                        <tr>
+                            <td>git rm %nombrearchivo%</td>
+                            <td>Remover un archivo del staging</td>
+                        </tr>
+                        <tr>
+                            <td>git rm --cached %nombrearchivo%</td>
+                            <td>Removerlo completamente del staging</td>
+                        </tr>
+                        <tr>
+                            <td>git rm --force %nombrearchivo%</td>
+                            <td>Removerlo completamente del staging y el disco</td>
+                        </tr>
+                        <tr>
+                            <td>git commit -m "Mensaje especifico"</td>
+                            <td>Enviarlo al master</td>
+                        </tr>
+                        <tr>
+                            <td>git config
+                                git config --list
+                                git config --list --show-origin
+                            </td>
+                            <td>Ver la configuración de git</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                git config --global user.name "NombreUsuario"
+                                <br />git config --global user.email "Correo@mail.com"
+                            </td>
+                            <td>Agregar usuario y email</td>
+                        </tr>
+                        <tr>
+                            <td>git log %nombrearchivo%</td>
+                            <td>Ver cambios o historia de un archivo</td>
+                        </tr>
+                        <tr>
+                            <td>git show  %nombrearchivo%</td>
+                            <td>Mostrar más información de las modificaciones del archivo</td>
+                        </tr>
+                        <tr>
+                            <td>git reset  -alfanumerico-   --hard o --soft</td>
+                            <td>Devolver un archivo a un punto en la historia
+                                <br />Tener mucho cuidado porque este comando borra todos los cambios adicionales que se hicieron</td>
+                        </tr>
+                        <tr>
+                            <td>Permite visualizar los bits por commit</td>
+                            <td>git log --stat</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                      Permite visualizar un archivo con la información de ese momento
+                                <br />se debe tener cuidado de no hacer commit en ese momento,
+                                <br />porque se perderia la información
+                            </td>
+                            <td>git checkout -alfanumerico- %nombrearchivo%</td>
+                        </tr>
+                        <tr>
+                            <td>si quiero volver al archivo</td>
+                            <td>git checkout master %nombrearchivo%</td>
+                        </tr>
+                        <tr>
+                            <td>Pararse en la rama</td>
+                            <td>git checkout %nombrerama%</td>
+                        </tr>
+
+                    </tbody>    
+
+                </table>
+
+
             </div>
         </div>
         
