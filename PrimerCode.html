@@ -2,35 +2,40 @@
     <head>
         <title>Curso GIT</title>
         <link rel="stylesheet" href="css/styles.css">
+        
     </head>        
     <body>
+        
+
         
         <div id="container">
             <div id="cabecera">
                 TodoGit <span id="tagline">Tools</span>
             </div>
+
             <div id="post">
                 <h1>Comandos</h1>
                 <p align="center">Información sobre los comandos vistos en el curso</p>
                 
                 
-                <table class="t-comands"  align="center">
-                    
+                <table id="mytable" class="t-comands" align="center">
+                <!--class="t-comands"-->
                     <thead>
                         <tr>
-                            <td>Comando</td>
-                            <td>Detalle</td>
+                            <td id="comando">Comando</td>
+                            <td id="detalle">Detalle</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>git init</td>
-                            <td>Ubicado dentro de un folder, se inicia el directorio de trabajo</td>
+                            <td onclick="toggleColumn(1)">git init</td>
+                            <td class="col1">Ubicado dentro de un folder, se inicia el directorio de trabajo</td>
                         </tr>
-                        <tr>
-                            <td>git status</td>
-                            <td>Ver el estado del folder</td>
-                        </tr>
+                            <tr>
+                                <td>git status</td>
+                                <td>Ver el estado del folder</td>
+                            </tr>
+
                         <tr>
                             <td>git add %nombrearchivo%</td>
                             <td>Agregar un archivo al staging</td>
@@ -100,14 +105,12 @@
                         </tr>
 
                     </tbody>    
-
+                    
                 </table>
-
-
+                
             </div>
         </div>
-        
-        
-    </body>
 
+    </body>
+    <script src="js/script.js"></script>
 </html>   
