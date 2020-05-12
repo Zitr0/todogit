@@ -50,3 +50,8 @@ git checkout -alfanumerico- NOMBREARCHIVO
 si quiero volver al archivo
 git checkout master NOMBREARCHIVO
 
+Crear rama, ubicados en la raiz
+git branch   NOMBRERAMA
+
+Pararse en la rama
+git checkout NOMBRERAMA
