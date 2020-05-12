@@ -1,3 +1,6 @@
+Ubicado dentro de un folder, se inicia el directorio de trabajo
+git init
+
 Ver el estado del folder
 git status
 
