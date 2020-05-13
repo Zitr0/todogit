@@ -55,3 +55,9 @@ git branch   NOMBRERAMA
 
 Pararse en la rama
 git checkout NOMBRERAMA
+
+Fusionar lo realizado y dejarlo en la rama seleccionada
+tener presente donde se esta ubicado
+git merge %nombrerama%
+
+
