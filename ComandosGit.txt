@@ -1,0 +1,63 @@
+Ubicado dentro de un folder, se inicia el directorio de trabajo
+git init
+
+Ver el estado del folder
+git status
+
+Agregar un archivo al staging
+git add PrimerArchivo.txt
+
+Remover un archivo del staging
+git rm PrimerArchivo.txt
+
+Removerlo completamente del staging
+git rm --cached PrimerArchivo.txt
+
+Removerlo completamente del staging y el disco
+git rm --force PrimerArchivo.txt
+
+Enviarlo al master
+git commit -m "Primer commit del archivo"
+
+Ver la configuración de git
+git config
+git config --list
+git config --list --show-origin
+
+Agregar usuario y email
+
+git config --global user.name "Camilo Ortiz"
+git config --global user.email "camiloorvi@gmail.com"
+
+Ver cambios o historia de un archivo
+git log PrimerArchivo.txt
+
+Mostrar más información de las modificaciones del archivo 
+git show NOMBREARCHIVO
+
+Devolver un archivo a un punto en la historia
+- Tener mucho cuidado porque este comando borra todos los cambios adicionales que se hicieron
+git reset  -alfanumerico-   --hard o --soft
+
+Permite visualizar los bits por commit
+git log --stat
+
+Permite visualizar un archivo con la información de ese momento
+se debe tener cuidado de no hacer commit en ese momento,
+porque se perderia la información
+git checkout -alfanumerico- NOMBREARCHIVO
+
+si quiero volver al archivo
+git checkout master NOMBREARCHIVO
+
+Crear rama, ubicados en la raiz
+git branch   NOMBRERAMA
+
+Pararse en la rama
+git checkout NOMBRERAMA
+
+Fusionar lo realizado y dejarlo en la rama seleccionada
+tener presente donde se esta ubicado
+git merge %nombrerama%
+
+
