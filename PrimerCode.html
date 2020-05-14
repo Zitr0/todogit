@@ -1,121 +1,161 @@
 <html>
-    <head>
-        <title>Curso GIT</title>
-        <link rel="stylesheet" href="css/styles.css">
-        
-    </head>        
-    <body>
-        
+  <head>
+    <title>Curso GIT</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="cabecera">TodoGit <span id="tagline">Tools</span></div>
 
-        
-        <div id="container">
-            <div id="cabecera">
-                TodoGit <span id="tagline">Tools</span>
-            </div>
+      <div id="post">
+        <h1>Comandos</h1>
+        <p align="center">Información sobre los comandos vistos en el curso</p>
 
-            <div id="post">
-                <h1>Comandos</h1>
-                <p align="center">Información sobre los comandos vistos en el curso</p>
-                
-                
-                <table id="mytable" class="t-comands" align="center">
-                <!--class="t-comands"-->
-                    <thead>
-                        <tr>
-                            <td id="comando">Comando</td>
-                            <td id="detalle">Detalle</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td onclick="toggleColumn(1)">git init</td>
-                            <td class="col1">Ubicado dentro de un folder, se inicia el directorio de trabajo</td>
-                        </tr>
-                            <tr>
-                                <td>git status</td>
-                                <td>Ver el estado del folder</td>
-                            </tr>
+        <table id="mytable" class="t-comands" align="center">
+          <!--class="t-comands"-->
+          <thead>
+            <tr>
+              <td id="comando">Comando</td>
+              <td id="detalle">Detalle</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td onclick="toggleColumn(1)">git init</td>
+              <td class="col1">
+                Ubicado dentro de un folder, se inicia el directorio de trabajo
+              </td>
+            </tr>
+            <tr>
+              <td>git status</td>
+              <td>Ver el estado del folder</td>
+            </tr>
 
-                        <tr>
-                            <td>git add %nombrearchivo%</td>
-                            <td>Agregar un archivo al staging</td>
-                        </tr>
-                        <tr>
-                            <td>git rm %nombrearchivo%</td>
-                            <td>Remover un archivo del staging</td>
-                        </tr>
-                        <tr>
-                            <td>git rm --cached %nombrearchivo%</td>
-                            <td>Removerlo completamente del staging</td>
-                        </tr>
-                        <tr>
-                            <td>git rm --force %nombrearchivo%</td>
-                            <td>Removerlo completamente del staging y el disco</td>
-                        </tr>
-                        <tr>
-                            <td>git commit -m "Mensaje especifico"</td>
-                            <td>Enviarlo al master</td>
-                        </tr>
-                        <tr>
-                            <td>git config
-                                git config --list
-                                git config --list --show-origin
-                            </td>
-                            <td>Ver la configuración de git</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                git config --global user.name "NombreUsuario"
-                                <br />git config --global user.email "Correo@mail.com"
-                            </td>
-                            <td>Agregar usuario y email</td>
-                        </tr>
-                        <tr>
-                            <td>git log %nombrearchivo%</td>
-                            <td>Ver cambios o historia de un archivo</td>
-                        </tr>
-                        <tr>
-                            <td>git show  %nombrearchivo%</td>
-                            <td>Mostrar más información de las modificaciones del archivo</td>
-                        </tr>
-                        <tr>
-                            <td>git reset  -alfanumerico-   --hard o --soft</td>
-                            <td>Devolver un archivo a un punto en la historia
-                                <br />Tener mucho cuidado porque este comando borra todos los cambios adicionales que se hicieron</td>
-                        </tr>
-                        <tr>
-                            <td>git log --stat</td>
-                            <td>Permite visualizar los bits por commit</td>
-                        </tr>
-                        <tr>
-                            <td>git checkout -alfanumerico- %nombrearchivo%</td>
-                            <td>
-                                      Permite visualizar un archivo con la información de ese momento
-                                <br />se debe tener cuidado de no hacer commit en ese momento,
-                                <br />porque se perderia la información
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>git checkout master %nombrearchivo%</td>
-                            <td>si quiero volver al archivo</td>
-                        </tr>
-                        <tr>
-                            <td>git checkout %nombrerama%</td>
-                            <td>Pararse en la rama</td>
-                        </tr>
-                        <tr>
-                            <td>git merge %nombrerama%</td>
-                            <td>Fusionar lo realizado y dejarlo en la rama seleccionada
-                                <br />tener presente donde se esta ubicado en la rama</td>
-                        </tr>
+            <tr>
+              <td>git add %nombrearchivo%</td>
+              <td>Agregar un archivo al staging</td>
+            </tr>
+            <tr>
+              <td>git rm %nombrearchivo%</td>
+              <td>Remover un archivo del staging</td>
+            </tr>
+            <tr>
+              <td>git rm --cached %nombrearchivo%</td>
+              <td>Removerlo completamente del staging</td>
+            </tr>
+            <tr>
+              <td>git rm --force %nombrearchivo%</td>
+              <td>Removerlo completamente del staging y el disco</td>
+            </tr>
+            <tr>
+              <td>git commit -m "Mensaje especifico"</td>
+              <td>Enviarlo al master</td>
+            </tr>
+            <tr>
+              <td>
+                git config git config --list git config --list --show-origin
+              </td>
+              <td>Ver la configuración de git</td>
+            </tr>
+            <tr>
+              <td>
+                git config --global user.name "NombreUsuario"
+                <br />git config --global user.email "Correo@mail.com"
+              </td>
+              <td>Agregar usuario y email</td>
+            </tr>
+            <tr>
+              <td>git log %nombrearchivo%</td>
+              <td>Ver cambios o historia de un archivo</td>
+            </tr>
+            <tr>
+              <td>git show %nombrearchivo%</td>
+              <td>Mostrar más información de las modificaciones del archivo</td>
+            </tr>
+            <tr>
+              <td>git reset -alfanumerico- --hard o --soft</td>
+              <td>
+                Devolver un archivo a un punto en la historia <br />Tener mucho
+                cuidado porque este comando borra todos los cambios adicionales
+                que se hicieron
+              </td>
+            </tr>
+            <tr>
+              <td>git log --stat</td>
+              <td>Permite visualizar los bits por commit</td>
+            </tr>
+            <tr>
+              <td>git checkout -alfanumerico- %nombrearchivo%</td>
+              <td>
+                Permite visualizar un archivo con la información de ese momento
+                <br />se debe tener cuidado de no hacer commit en ese momento,
+                <br />porque se perderia la información
+              </td>
+            </tr>
+            <tr>
+              <td>git checkout master %nombrearchivo%</td>
+              <td>si quiero volver al archivo</td>
+            </tr>
+            <tr>
+              <td>git checkout %nombrerama%</td>
+              <td>Pararse en la rama</td>
+            </tr>
+            <tr>
+              <td>git merge %nombrerama%</td>
+              <td>
+                Fusionar lo realizado y dejarlo en la rama seleccionada
+                <br />tener presente donde se esta ubicado en la rama
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-                    </tbody>    
-                    
-                </table>
-                
-            </div>
-        </div>
-
-    </body>
-    <script src="js/script.js"></script>
-</html>   
+        <h1>Comandos utilizados para GitHub</h1>
+        <table id="mytable" class="t-comands" align="center">
+          <thead>
+            <tr>
+              <td id="comando">Comando</td>
+              <td id="detalle">Detalle</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>git remote add origin %repositorio de git%</td>
+              <td>
+                Se agrega un origen remoto de nuestra información que se tiene
+                en el repositorio <br />Se ingresa a github/repositorio y en la
+                parte que dice clone <br />se busca el http y se copia la url
+              </td>
+            </tr>
+            <tr>
+              <td>git remote</td>
+              <td>Muestra si se agregó origin</td>
+            </tr>
+            <tr>
+              <td>git remote -v</td>
+              <td>
+                Muestra especificamente que se tiene para hacer con origin
+                <br />-fectch traernos información <br />-push enviar
+                información
+              </td>
+            </tr>
+            <tr>
+              <td>git pull origin master</td>
+              <td>Se trae la información a la rama que le indiquemos</td>
+            </tr>
+            <tr>
+              <td>git pull origin master --allow-unrelated-histories</td>
+              <td>
+                Cuando el grupo de commits en el repositorio remoto tiene
+                información
+                <br />aparece fatal:refusing to merge unrelated histories
+                <br />para solucionar esto utilizamos el comando
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>

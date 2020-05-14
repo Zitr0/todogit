@@ -60,4 +60,25 @@ Fusionar lo realizado y dejarlo en la rama seleccionada
 tener presente donde se esta ubicado
 git merge %nombrerama%
 
+Se agrega un origen remoto de nuestra información que se tiene en el repositorio
+Se ingresa a github/repositorio y en la parte que dice clone
+se busca el http y se copia la url
+git remote add origin %repositorio de git%
+
+Muestra si se agregó origin
+git remote
+
+Muestra especificamente que se tiene para hacer con origin
+-fectch traernos información
+-push enviar información
+git remote -v
+
+Se trae la información a la rama que le indiquemos
+git pull origin master
+
+Cuando el grupo de commits en el repositorio remoto tiene información
+aparece fatal:refusing to merge unrelated histories
+para solucionar esto utilizamos el comando
+git pull origin master --allow-unrelated-histories
+
 
