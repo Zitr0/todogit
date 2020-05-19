@@ -11,17 +11,6 @@ var clic = 1;
 
 function mostrar(clicked_id){
      
-     /*
-     if(clic==1 && clicked_id=="git"){
-          document.getElementById('post').style.display="block";
-          clic = clic + 1;
-      }
-     else{
-          document.getElementById('post').style.display="none";
-          clic = 1;
-     }
-     */
-
      if(clic==1 && clicked_id=="buttonGit"){
           document.getElementById('git').style.display="block";
           clic = clic + 1;
