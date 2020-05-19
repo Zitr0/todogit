@@ -152,6 +152,14 @@
                 <br />para solucionar esto utilizamos el comando
               </td>
             </tr>
+            <tr>
+              <td>git log --all --graph --decorate --oneline</td>
+              <td>Mostrar todo el historial de cambios en forma de árbol</td>
+            </tr>
+            <tr>
+              <td>alias %nombre%="git log --all --graph --decorate --oneline"</td>
+              <td>anteponiendo la palabra alias, se crea una forma rápida de llamar el comando</td>
+            </tr>
           </tbody>
         </table>
 
@@ -180,7 +188,34 @@
               <td>git remote set-url  origin %ruta ssh%</td>
               <td>Cambiar conexión remota ssh </td>
             </tr>
+            
           </tbody>
+        </table>
+
+        <h1>Configuración TAGS</h1>
+        <table id="mytable" class="t-comands" align="center">
+          <THead>
+            <tr>
+              <td id="comando">Comando</td>
+              <td id="detalle">Detalle</td>
+            </tr>
+          </THead>
+          <TBody>
+            <tr>
+              <td>git tag -a v0.1 -m %"mensaje"% %HASH%</td>
+              <td>Crear tag, ver el HASH Corto con historial</td>
+            </tr>
+            <tr>
+              <td>git show-ref --tags
+                <br />git tag
+              </td>
+              <td>tags creados</td>
+            </tr>
+            <tr>
+              <td>git tag --delete %nombre tag%</td>
+              <td>Eliminar tag</td>
+            </tr>
+          </TBody>
         </table>
 
       </div>
