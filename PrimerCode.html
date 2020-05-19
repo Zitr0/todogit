@@ -20,17 +20,20 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <!--<tr>
               <td onclick="toggleColumn(1)">git init</td>
               <td class="col1">
                 Ubicado dentro de un folder, se inicia el directorio de trabajo
               </td>
+            </tr>-->
+            <tr>
+              <td>git init</td>
+              <td>Ubicado dentro de un folder, se inicia el directorio de trabajo</td>
             </tr>
             <tr>
               <td>git status</td>
               <td>Ver el estado del folder</td>
             </tr>
-
             <tr>
               <td>git add %nombrearchivo%</td>
               <td>Agregar un archivo al staging</td>
@@ -107,6 +110,10 @@
                 <br />tener presente donde se esta ubicado en la rama
               </td>
             </tr>
+            <tr>
+              <td>alias %nombre%="git log --all --graph --decorate --oneline"</td>
+              <td>anteponiendo la palabra alias, se crea una forma rápida de llamar el comando</td>
+            </tr>
           </tbody>
         </table>
 
@@ -156,10 +163,7 @@
               <td>git log --all --graph --decorate --oneline</td>
               <td>Mostrar todo el historial de cambios en forma de árbol</td>
             </tr>
-            <tr>
-              <td>alias %nombre%="git log --all --graph --decorate --oneline"</td>
-              <td>anteponiendo la palabra alias, se crea una forma rápida de llamar el comando</td>
-            </tr>
+           
           </tbody>
         </table>
 
@@ -214,6 +218,10 @@
             <tr>
               <td>git tag --delete %nombre tag%</td>
               <td>Eliminar tag</td>
+            </tr>
+            <tr>
+              <td>git push origin --tags</td>
+              <td>Enviar a github los tags creados en local</td>
             </tr>
           </TBody>
         </table>
