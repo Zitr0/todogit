@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla SSH</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div id="container">
+     <!--Configuración SSH-->
+        
+        <h1>Configuración SSH</h1>
+        <table id="mytable" class="t-comands" align="center">
+        <thead>
+            <tr>
+            <td id="comando">Comando</td>
+            <td id="detalle">Detalle</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>ssh-keygen -t rsa -b 4096 -C "@email.com"</td>
+            <td>Generar llaves SSH</td>
+            </tr>
+            <tr>
+            <td>eval $(ssh-agent -s)"</td>
+            <td>Verificar que el servicio esta activo</td>
+            </tr>
+            <tr>
+            <td>ssh-add ~/.ssh/id_rsa</td>
+            <td>Agregar key en local</td>
+            </tr>
+            <tr>
+            <td>git remote set-url origin %ruta ssh%</td>
+            <td>Cambiar conexión remota ssh</td>
+            </tr>
+            <tr>
+            <td>nano CTRL + X, Y, ENTER. En vi y vim es ESC + SHIFT + Z + Z</td>
+            <td>Aunque no es un comando, en ocasiones se tienen problemas para guardar y salir en el editor en la consola</td>
+            </tr>
+        </tbody>
+        </table>
+       
+    </div>
+</body>
+</html>

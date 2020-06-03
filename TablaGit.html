@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla GIT</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    
+    <div id="container">
+        <!--Configuración GIT-->       
+        <h1>Comandos principales--</h1>
+        <table id="mytable" class="t-comands" align="center">
+          <!--class="t-comands"-->
+          <thead>
+            <tr>
+              <td id="comando">Comando</td>
+              <td id="detalle">Detalle</td>
+            </tr>
+          </thead>
+          <tbody>
+            <!--<tr>
+              <td onclick="toggleColumn(1)">git init</td>
+              <td class="col1">
+                Ubicado dentro de un folder, se inicia el directorio de trabajo
+              </td>
+            </tr>-->
+            <tr>
+              <td>git init</td>
+              <td>
+                Ubicado dentro de un folder, se inicia el directorio de trabajo
+              </td>
+            </tr>
+            <tr>
+              <td>git status</td>
+              <td>Ver el estado del folder</td>
+            </tr>
+            <tr>
+              <td>git add %nombrearchivo%</td>
+              <td>Agregar un archivo al staging</td>
+            </tr>
+            <tr>
+              <td>git rm %nombrearchivo%</td>
+              <td>Remover un archivo del staging</td>
+            </tr>
+            <tr>
+              <td>git rm --cached %nombrearchivo%</td>
+              <td>Removerlo completamente del staging</td>
+            </tr>
+            <tr>
+              <td>git rm --force %nombrearchivo%</td>
+              <td>Removerlo completamente del staging y el disco</td>
+            </tr>
+            <tr>
+              <td>git commit -m "Mensaje especifico"</td>
+              <td>Enviarlo al master</td>
+            </tr>
+            <tr>
+              <td>
+                git config git config --list git config --list --show-origin
+              </td>
+              <td>Ver la configuración de git</td>
+            </tr>
+            <tr>
+              <td>
+                git config --global user.name "NombreUsuario"
+                <br />git config --global user.email "Correo@mail.com"
+              </td>
+              <td>Agregar usuario y email</td>
+            </tr>
+            <tr>
+              <td>git log %nombrearchivo%</td>
+              <td>Ver cambios o historia de un archivo</td>
+            </tr>
+            <tr>
+              <td>git show %nombrearchivo%</td>
+              <td>Mostrar más información de las modificaciones del archivo</td>
+            </tr>
+            <tr>
+              <td>git reset -alfanumerico- --hard o --soft</td>
+              <td>
+                Devolver un archivo a un punto en la historia <br />Tener mucho
+                cuidado porque este comando borra todos los cambios adicionales
+                que se hicieron
+              </td>
+            </tr>
+            <tr>
+              <td>git log --stat</td>
+              <td>Permite visualizar los bits por commit</td>
+            </tr>
+            <tr>
+              <td>git checkout -alfanumerico- %nombrearchivo%</td>
+              <td>
+                Permite visualizar un archivo con la información de ese momento
+                <br />se debe tener cuidado de no hacer commit en ese momento,
+                <br />porque se perderia la información
+              </td>
+            </tr>
+            <tr>
+              <td>git checkout master %nombrearchivo%</td>
+              <td>si quiero volver al archivo</td>
+            </tr>
+            <tr>
+              <td>git checkout %nombrerama%</td>
+              <td>Pararse en la rama</td>
+            </tr>
+            <tr>
+              <td>git merge %nombrerama%</td>
+              <td>
+                Fusionar lo realizado y dejarlo en la rama seleccionada
+                <br />tener presente donde se esta ubicado en la rama
+              </td>
+            </tr>
+            <tr>
+              <td>
+                alias %nombre%="git log --all --graph --decorate --oneline"
+              </td>
+              <td>
+                anteponiendo la palabra alias, se crea una forma rápida de
+                llamar el comando
+              </td>
+            </tr>
+            <tr>
+              <td>
+                . ~/.bashrc
+              </td>
+              <td>
+                Para agregar el alias de forma permanente, ubicados sobre la raiz ~
+                <br />se crea el archivo nano .bashrc  y dentro se le pone el comando
+                <br />luego se guarda el archivo.
+                <br />Finalmente se pone el comando.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

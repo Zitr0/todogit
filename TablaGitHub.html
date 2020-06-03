@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla GitHub</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    
+    <div id="container">
+        <!--Configuración GitHub-->       
+        <h1>Comandos utilizados para GitHub</h1>
+        <table id="mytable" class="t-comands" align="center">
+        <thead>
+            <tr>
+            <td id="comando">Comando</td>
+            <td id="detalle">Detalle</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>git remote add origin %repositorio de git%</td>
+            <td>
+                Se agrega un origen remoto de nuestra información que se tiene
+                en el repositorio <br />Se ingresa a github/repositorio y en la
+                parte que dice clone <br />se busca el http y se copia la url
+            </td>
+            </tr>
+            <tr>
+            <td>git remote</td>
+            <td>Muestra si se agregó origin</td>
+            </tr>
+            <tr>
+            <td>git remote -v</td>
+            <td>
+                Muestra especificamente que se tiene para hacer con origin
+                <br />-fectch traernos información <br />-push enviar
+                información
+            </td>
+            </tr>
+            <tr>
+            <td>git pull origin master</td>
+            <td>Se trae la información a la rama que le indiquemos</td>
+            </tr>
+            <tr>
+            <td>git push origin master</td>
+            <td>Envia la información a GitHub</td>
+            </tr>
+            <tr>
+            <td>git pull origin master --allow-unrelated-histories</td>
+            <td>
+                Cuando el grupo de commits en el repositorio remoto tiene
+                información
+                <br />aparece fatal:refusing to merge unrelated histories
+                <br />para solucionar esto utilizamos el comando
+            </td>
+            </tr>
+            <tr>
+            <td>git log --all --graph --decorate --oneline</td>
+            <td>Mostrar todo el historial de cambios en forma de árbol</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

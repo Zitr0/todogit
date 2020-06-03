@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Tags</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div id="container">
+     <!--Configuración TAGS-->
+        
+            <h1>Configuración TAGS</h1>
+            <table id="mytable" class="t-comands" align="center">
+            <thead>
+                <tr>
+                <td id="comando">Comando</td>
+                <td id="detalle">Detalle</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>git tag -a v0.1 -m %"mensaje"% %HASH%</td>
+                <td>Crear tag, ver el HASH Corto con historial</td>
+                </tr>
+                <tr>
+                <td>git show-ref --tags <br />git tag</td>
+                <td>tags creados</td>
+                </tr>
+                <tr>
+                <td>git tag --delete %nombre tag%</td>
+                <td>Eliminar tag</td>
+                </tr>
+                <tr>
+                <td>git push origin --tags</td>
+                <td>Enviar a github los tags creados en local</td>
+                </tr>
+                <tr>
+                <td>git push origin :refs/tags/%nombretag%</td>
+                <td>Eliminar tag que esta en GitHub</td>
+                </tr>
+            </tbody>
+            </table>
+       
+    </div>
+</body>
+</html>
