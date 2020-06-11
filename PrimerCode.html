@@ -6,6 +6,7 @@
   </head>
   <body>
     <div id="container">
+<<<<<<< HEAD
     
       <div id="cabecera">TodoGit 
         <span id="tagline">Tools</span>
@@ -14,6 +15,12 @@
         
         <h1>Información sobre los comandos vistos en el curso de GIT</h1>
  
+=======
+      <div id="cabecera">TodoGit <span id="tagline">Tools</span>
+      </div>
+      <h1>Información sobre los comandos vistos en el curso de GIT</h1>
+
+>>>>>>> footer
         <!--Configuración Cards-->
         <div class="boxesContainer">
 
@@ -23,8 +30,7 @@
                 <img
                 src="img/git.png"
                 alt="Avatar"
-                style="width: 100%; height: 100%;"
-              />
+                style="width: 100%; height: 100%;"/>
                 <strong>&#x21bb;</strong>
               </div>
               <div class="back">
@@ -41,20 +47,13 @@
                 <img
                 src="img/github.png"
                 alt="Avatar"
-                style="width: 100%; height: 100%;"
-              />
+                style="width: 100%; height: 100%;"/>
                 <strong>&#x21bb;</strong>
               </div>
               <div class="back">
                 <h1>GitHub</h1>
                 <p>Comandos para servidor remoto</p>
-                <button
-                  id="buttonGitHub"
-                  class="button button1"
-                  onclick="mostrar(this.id);"
-                >
-                  Ver
-                </button>
+                <button id="buttonGitHub" class="button button1" onclick="mostrar(this.id);">Ver</button>
               </div>
             </div>
           </div>
@@ -65,20 +64,13 @@
                 <img
                 src="img/ssh.png"
                 alt="Avatar"
-                style="width: 100%; height: 100%;"
-              />
+                style="width: 100%; height: 100%;"/>
                 <strong>&#x21bb;</strong>
               </div>
               <div class="back">
                 <h1>SSH</h1>
                 <p>Comandos configuración conexión segura</p>
-                <button
-                  id="buttonSsh"
-                  class="button button1"
-                  onclick="mostrar(this.id);"
-                >
-                  Ver
-                </button>
+                <button id="buttonSsh" class="button button1" onclick="mostrar(this.id);"> Ver</button>
               </div>
             </div>
           </div>
@@ -89,24 +81,17 @@
                 <img
                         src="img/tags.png"
                         alt="Avatar"
-                        style="width: 100%; height: 100%;"
-                      />
+                        style="width: 100%; height: 100%;"/>
                 <strong>&#x21bb;</strong>
               </div>
               <div class="back">
                 <h1>Tags</h1>
                 <p>Comandos utilizados para etiquetar</p>
-                <button
-                  id="buttonTag"
-                  class="button button1"
-                  onclick="mostrar(this.id);"
-                >
-                  Ver
-                </button>
+                <button id="buttonTag" class="button button1" onclick="mostrar(this.id);">Ver</button>
               </div>
             </div>
           </div> 
-       </div>
+        </div>
 
         <!--Configuración GIT-->
         <div id="git" style="display: none;">
@@ -127,10 +112,20 @@
         <div id="tags" style="display: none;">
               <object data="TablaTags.html" style="width: 100%; height: 100%" ></object>
         </div>
+
+      <div id="fin">
+      ..
       </div>
-      
+
+      <div id="footer">
+        Hecho con ♥ por <a href="https://github.com/Zitr0" target="blank">Zitr0</a>
+      </div>
+
     </div>
-  
+
+    
+   
+
   </body>
   <script src="js/script.js"></script>
 </html>
