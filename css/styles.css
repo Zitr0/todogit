@@ -30,6 +30,19 @@ body {
   margin: 0 auto;
 }
 
+#footer
+{
+  
+  text-align: center;
+  background:rgb(165, 164, 164);
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: normal;
+  margin: 0;
+  padding: 0.5em;
+  
+}
+
 #container h1 {
   font-size: 20px;
   text-align: center;
@@ -269,3 +282,4 @@ table.show3 .col3 {
     height: 260px;
   }
 }
+
