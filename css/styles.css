@@ -10,6 +10,7 @@ body {
 #cabecera {
   background: rgb(26, 135, 243);
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+  height: 40px;
   color: white;
   font-weight: bold;
   margin: 0;
@@ -20,6 +21,12 @@ body {
   padding: 0 0 0 1em;
   font-weight: normal;
   font-size: 0.8em;
+}
+
+#cabecera #logo
+{
+  width: 40px;
+  float: right;
 }
 
 #container {
